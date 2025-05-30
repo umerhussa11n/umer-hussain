@@ -1,5 +1,7 @@
 import Image from "next/image";
 import SEO from "@/app/Components/SEO";
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -24,14 +26,14 @@ export default function Home() {
           <p className="text-white text-4xl sm:text-6xl font-mono font-extrabold tracking-tight uppercase">
           Umer Hussain
           </p>
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            React | javascript | TypeScript | Next.js | AWS
+          <p className="text-white text-xl sm:text-xl font-mono font-extrabold tracking-tight uppercase">
+          Senior Software Engineer
+          </p>
+        <ul className="list-none list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="mb-2">
+            React | Node | AWS
           </li>
-          <li className="tracking-[-.01em]">
-            AWS Certified Solutions Architect - In Progress
-          </li>
-        </ol>
+        </ul>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
@@ -77,7 +79,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="www.linkedin.com/in/umer-hussain"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -103,7 +105,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Articles & Blogs
+          <Link href="articles" className="text-white-400 underline">Articles & Blogs</Link>
         </a>
       </footer>
     </div>
