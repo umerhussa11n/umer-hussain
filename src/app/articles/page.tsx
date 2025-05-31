@@ -5,6 +5,7 @@ const cards = [
   { label: 'React Js', version: '19.0.1', href: '/articles/react' },
   { label: 'Node', version: '22.0.0', href: '/articles/node' },
   { label: 'AWS', version: '2', href: '/articles/aws' },
+  { label: 'JavaScript', version: '2', href: '/articles/javascript' },
 ];
 
 const ArticlesIndex = () => {
