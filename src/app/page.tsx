@@ -1,9 +1,7 @@
 import Image from "next/image";
 import SEO from "@/app/Components/SEO";
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import React from "react";
-import AnimatedSection from "@/app/Components/AnimatedSection";
 
 export default function Home() {
   return (
