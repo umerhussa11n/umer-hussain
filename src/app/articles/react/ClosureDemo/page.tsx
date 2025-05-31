@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 // 2. CLOSURES AND LEXICAL SCOPE DEMO

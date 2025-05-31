@@ -12,7 +12,6 @@ interface SEOProps {
 }
 
 const SEO = ({
-  
   title = 'Umer Hussain | Frontend Engineer & AWS Certified Solutions Architect - In Progress',
   description = 'Technical Lead & Frontend SME | CMS Architect | AWS | Next.js | React | TypeScript | JavaScript',
   image = '@app/images/profile.jpg',

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 
 // 1. EVENT DELEGATION DEMO

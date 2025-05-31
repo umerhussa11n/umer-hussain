@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 // 3. PROMISES AND ASYNC/AWAIT DEMO

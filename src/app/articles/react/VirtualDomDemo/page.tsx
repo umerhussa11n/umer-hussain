@@ -1,3 +1,5 @@
+
+"use client";
 import { useEffect, useState } from "react";
 
 // 4. VIRTUAL DOM AND RECONCILIATION DEMO

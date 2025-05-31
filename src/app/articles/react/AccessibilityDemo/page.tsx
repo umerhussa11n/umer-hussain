@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 const AccessibilityDemo: React.FC = () => {

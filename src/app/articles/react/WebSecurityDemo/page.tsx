@@ -1,3 +1,5 @@
+
+"use client";
 import { useEffect, useState } from "react";
 
 // 10. WEB SECURITY DEMO
