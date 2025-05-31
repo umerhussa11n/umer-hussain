@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useState } from "react";
 
 // 6. DEBOUNCING VS THROTTLING DEMO
