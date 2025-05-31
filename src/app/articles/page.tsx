@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 
 const cards = [
-  { label: 'React Js', href: '/articles/react' },
-  { label: 'Node', href: '/articles/node' },
-  { label: 'AWS', href: '/articles/aws' },
+  { label: 'React Js', version: '19.0.1', href: '/articles/react' },
+  { label: 'Node', version: '22.0.0', href: '/articles/node' },
+  { label: 'AWS', version: '2', href: '/articles/aws' },
 ];
 
 const ArticlesIndex = () => {
@@ -23,8 +23,9 @@ const ArticlesIndex = () => {
           >
             <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               {/* Front */}
-              <div className="absolute inset-0 bg-white rounded-lg shadow-md flex items-center justify-center backface-hidden">
+              <div className="absolute inset-0 bg-white rounded-lg shadow-md flex flex-col items-center justify-center backface-hidden">
                 <h2 className="text-2xl font-bold text-gray-900">{card.label}</h2>
+                <p className="text-l font-italic text-gray-900">{card.version}</p>
               </div>
               {/* Back */}
               <div className="absolute inset-0 bg-gray-900 rounded-lg shadow-md flex items-center justify-center [transform:rotateY(180deg)] backface-hidden">

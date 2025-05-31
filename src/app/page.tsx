@@ -1,7 +1,9 @@
 import Image from "next/image";
 import SEO from "@/app/Components/SEO";
 import Link from 'next/link';
-
+import { motion } from 'framer-motion';
+import React from "react";
+import AnimatedSection from "@/app/Components/AnimatedSection";
 
 export default function Home() {
   return (
@@ -23,15 +25,15 @@ export default function Home() {
             className="rounded-full"
             >
             </Image>
-          <p className="text-white text-4xl sm:text-6xl font-mono font-extrabold tracking-tight uppercase">
-          Umer Hussain
-          </p>
+            <p className="text-white text-4xl sm:text-6xl font-mono font-extrabold tracking-tight uppercase">
+              Umer Hussain
+            </p>          
           <p className="text-white text-xl sm:text-xl font-mono font-extrabold tracking-tight uppercase">
           Senior Software Engineer
           </p>
         <ul className="list-none list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            React | Node | AWS
+            React  | Node  | AWS 
           </li>
         </ul>
 
