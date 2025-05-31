@@ -16,13 +16,39 @@ const codeExample = `// Variable declarations
     const obj = { a: 1 };     // object
 `;
 
+//symbol example 
+const symbolExample = `
+const uniqueId = Symbol('uniqueId');
+
+const user = {
+  name: 'Alice',
+  [uniqueId]: 12345, // Symbol as a property key
+};
+
+// Even if someone else adds a property called 'uniqueId', it won't conflict:
+user.uniqueId = 'not secret';
+
+console.log(user[uniqueId]); // 12345 (accesses the symbol property)
+console.log(user.uniqueId);  // "not secret" (accesses the string property)
+
+// Symbols are not included in for...in or Object.keys()
+for (let key in user) {
+  console.log(key); // Only logs 'name' and 'uniqueId', not the symbol property
+}
+console.log(Object.keys(user)); // ['name', 'uniqueId']
+
+// But you can get symbol properties with Object.getOwnPropertySymbols
+console.log(Object.getOwnPropertySymbols(user)); // [Symbol(uniqueId)]
+`
+
 const VariablesAndDataTypes = () => (
+  <>
   <div className="max-w-2xl mx-auto p-6 border rounded-lg shadow-md p-4 m-8">
-    <h1 className="text-3xl font-bold mb-4">Variables & Data Types in JavaScript</h1>
-    <p className="mb-4 text-white-700">
+    <h1 className="text-3xl font-bold mb-4 text-center">Variables & Data Types in JavaScript</h1>
+    <p className="mb-4 text-white">
       JavaScript provides three ways to declare variables: <code className="bg-white-100 px-1 rounded">var</code>, <code className="bg-white-100 px-1 rounded">let</code>, and <code className="bg-white-100 px-1 rounded">const</code>.
     </p>
-    <ul className="mb-4 list-disc pl-6 text-white-700">
+    <ul className="mb-4 list-disc pl-6 text-white">
       <li>
         <strong>var</strong>: Function-scoped. Can be redeclared and updated. Avoid using in modern code.
       </li>
@@ -33,7 +59,7 @@ const VariablesAndDataTypes = () => (
         <strong>const</strong>: Block-scoped. Cannot be updated or redeclared. Must be initialized at declaration.
       </li>
     </ul>
-    <h2 className="text-2xl font-semibold mb-2">JavaScript Data Types</h2>
+    <h2 className="text-2xl font-semibold mb-2 text-center">JavaScript Data Types</h2>
     <ul className="mb-4 list-disc pl-6 text-white-700">
       <li><strong>String</strong>: Textual data, e.g., <code>"hello"</code></li>
       <li><strong>Number</strong>: Numeric values, e.g., <code>42</code>, <code>3.14</code></li>
@@ -43,14 +69,25 @@ const VariablesAndDataTypes = () => (
       <li><strong>Symbol</strong>: Unique and immutable primitive value (used as object keys)</li>
       <li><strong>Object</strong>: Collections of key-value pairs, arrays, functions, etc.</li>
     </ul>
-    <h2 className="text-xl font-semibold mb-2">Example</h2>
-    <pre className="bg-white-900 text-white-100 rounded p-4 overflow-x-auto mb-4">
+    <h2 className="text-xl font-semibold mb-2 text-center">Examples</h2>
+    <pre className="bg-white-900 text-white rounded p-4 overflow-x-auto mb-4">
       <code>{codeExample}</code>
     </pre>
-    <p className="text-white-700">
+    <p className="text-white">
       Understanding how to declare variables and the different data types is fundamental to writing robust JavaScript code.
     </p>
   </div>
+
+    <div className="max-w-2xl mx-auto p-6 border rounded-lg shadow-md p-4 m-8">
+      <h2 className="text-xl font-semibold mb-2 text-center">Symbol Examples</h2>
+    <p className="text-white">
+      Symbols are a unique data type introduced in ES6. They are often used to create unique property keys that won't conflict with other properties, even if they have the same name.
+    </p>
+    <pre className="bg-white-900 text-white rounded p-4 overflow-x-auto mb-4">
+      <code>{symbolExample}</code>
+    </pre>
+    </div>
+    </>
 );
 
 export default VariablesAndDataTypes;
