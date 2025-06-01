@@ -46,6 +46,26 @@ const intermediateTopics = [
     name: 'ES6 Features',
     notes: 'Use modern JavaScript features like destructuring, spread/rest, template literals, and modules.',
   },
+  {
+    name: 'Error Handling',
+    notes: 'Learn about try/catch, throw, and custom error handling in JavaScript.',
+  },
+  {
+    name: 'debounce & throttle',
+    notes: 'Understand how to control function execution frequency with debounce and throttle techniques.',
+  },
+  {
+    name: 'Hoisting',
+    notes: 'Learn how variable and function declarations are hoisted in JavaScript.',
+  },
+  {
+    name: 'Pure Functions',
+    notes: 'Understand the concept of pure functions and their importance in functional programming.',
+  },
+  {
+    name: 'Objects In Javascript',
+    notes: 'Explore how objects work in JavaScript, including object literals, constructors, and prototypes.',
+  }
 ];
 
 const advancedTopics = [
@@ -113,9 +133,7 @@ const conceptDemos = [
     description: 'Enforcing stricter parsing and error handling in JavaScript.',
     component: () => <Placeholder title="Strict Mode" />,
     icon: Lock,
-  },
-];
-
+  }];
 // ConceptSection for advanced demos
 const ConceptSection: React.FC<{
   concept: typeof conceptDemos[0];
