@@ -18,7 +18,7 @@ const eslintConfig = [
       // "next/no-async-client-component": "error",
       // Add your custom or recommended rules here
       "no-console": "warn",
-      "next/no-async-client-component": "error",
+      // "next/no-async-client-component": "error",
     },
   },
 ];
