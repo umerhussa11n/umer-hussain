@@ -3,12 +3,12 @@ import React, { useEffect, useMemo } from "react";
 import { useState } from "react";
 
 // 8. PERFORMANCE TUNING DEMO
-const PerformanceDemo: React.FC = () =>{
+const PerformanceDemo: React.FC = () => {
   const [renderTime, setRenderTime] = useState<number>(0);
   const [listSize, setListSize] = useState<number>(100);
   const [useVirtualization, setUseVirtualization] = useState<boolean>(false);
 
-  const ExpensiveComponent = React.memo(({ item, index }: { item: number; index: number }) => {
+  const ExpensiveComponent = React.memo(({ item }: { item: number }) => {
     // Simulate expensive computation
     const expensiveValue = useMemo(() => {
       let result = 0;
@@ -16,7 +16,7 @@ const PerformanceDemo: React.FC = () =>{
         result += Math.random();
       }
       return result;
-    }, [item]);
+    }, []);
 
     return (
       <div className="p-2 border-b border-gray-200 flex justify-between">
@@ -27,6 +27,7 @@ const PerformanceDemo: React.FC = () =>{
       </div>
     );
   });
+  ExpensiveComponent.displayName = "ExpensiveComponent";
 
   const items = useMemo(() => 
     Array.from({ length: listSize }, (_, i) => i + 1), 
@@ -79,9 +80,9 @@ const PerformanceDemo: React.FC = () =>{
         </p>
       </div>
       
-      <div className="h-40 overflow-y-auto border rounded">
-        {visibleItems.map((item, index) => (
-          <ExpensiveComponent key={item} item={item} index={index} />
+      <div>
+        {visibleItems.map((item) => (
+          <ExpensiveComponent key={item} item={item} />
         ))}
         {useVirtualization && listSize > 20 && (
           <div className="p-2 text-center text-gray-500 text-sm">

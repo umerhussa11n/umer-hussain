@@ -13,7 +13,7 @@ const VirtualDOMDemo: React.FC = () => {
 
   useEffect(() => {
     setRenderCount(prev => prev + 1);
-  });
+  }, []);
 
   const shuffleItems = () => {
     setItems(prev => [...prev].sort(() => Math.random() - 0.5));

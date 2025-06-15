@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 
@@ -21,7 +20,6 @@ const awsServices = [
 
 const AWSPage = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const router = useRouter();
 
 
   const toggle = (idx: number) => {

@@ -100,8 +100,9 @@ export default function Home() {
             width={16}
             height={16}
           />
-          <Link href="articles" className="text-white-400 underline">Articles & Blogs</Link>
         </a>
+      <Link href="articles" className="text-white-400 underline">Articles & Blogs</Link>
+
       </footer>
     </div>
     </>

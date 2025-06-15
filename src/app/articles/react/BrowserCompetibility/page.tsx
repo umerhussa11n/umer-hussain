@@ -32,7 +32,7 @@ const BrowserCompatibilityDemo: React.FC = () => {
   return (
     <div className="p-4 border rounded-lg">
       <h3 className="font-semibold mb-2">Browser Compatibility</h3>
-      <p className="text-sm text-white-600 mb-4">Feature detection for cross-browser support</p>
+      <p className="text-sm text-grey-600 mb-4">Feature detection for cross-browser support</p>
       
       <div className="grid grid-cols-2 gap-2">
         {Object.entries(featureSupport).map(([feature, supported]) => (
@@ -49,7 +49,7 @@ const BrowserCompatibilityDemo: React.FC = () => {
       
       <div className="mt-4 p-3 bg-blue-50 rounded">
         <h4 className="font-medium text-sm">Polyfill Strategy</h4>
-        <p className="text-xs text-black-600 mt-1">
+        <p className="text-xs text-gray-600 mt-1">
           Use feature detection + progressive enhancement + polyfills for unsupported features
         </p>
       </div>
