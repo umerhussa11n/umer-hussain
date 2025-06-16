@@ -4,8 +4,8 @@
 // Finding the longest substring without repeating characters.. 
 // abcdee|
 function lengthOfLongestSubstring(s) {
-    let left = 0;
-    let right = 0;
+    // let left = 0;
+    // let right = 0;
     let maxLength = 0;
     const charSet = new Set();
 

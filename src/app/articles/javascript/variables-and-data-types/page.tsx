@@ -61,7 +61,7 @@ const VariablesAndDataTypes = () => (
     </ul>
     <h2 className="text-2xl font-semibold mb-2 text-center">JavaScript Data Types</h2>
     <ul className="mb-4 list-disc pl-6 text-white-700">
-      <li><strong>String</strong>: Textual data, e.g., <code>"hello"</code></li>
+      <li><strong>String</strong>: Textual data, e.g., <code>hello</code></li>
       <li><strong>Number</strong>: Numeric values, e.g., <code>42</code>, <code>3.14</code></li>
       <li><strong>Boolean</strong>: <code>true</code> or <code>false</code></li>
       <li><strong>Null</strong>: Intentional absence of value</li>

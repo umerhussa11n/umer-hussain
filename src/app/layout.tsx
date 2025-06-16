@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: " Umer Hussain | Frontend Engineer & AWS Solutions Architect - In Progress`",
+  title: "Umer Hussain | Frontend Engineer & AWS Solutions Architect - In Progress",
   description: "Author, Engineering Manager & Frontend SME specializing in Next.js, React, and TypeScript. Conference speaker and workshop facilitator with expertise in building scalable frontend systems.",
 };
 
@@ -23,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full bg-background text-foreground font-sans`}
       >
         {children}
       </body>

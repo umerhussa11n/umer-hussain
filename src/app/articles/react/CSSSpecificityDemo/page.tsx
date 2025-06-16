@@ -1,9 +1,7 @@
 "use client"
-import { useState } from "react";
 
 // 5. CSS SPECIFICITY DEMO
 const CSSSpecificityDemo: React.FC = () => {
-  const [selectedElement, setSelectedElement] = useState<string>('');
 
   const specificityExamples = [
     { selector: 'div', specificity: '0,0,0,1', description: 'Element selector' },

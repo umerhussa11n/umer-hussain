@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 // 2. CLOSURES AND LEXICAL SCOPE DEMO
 const ClosuresDemo: React.FC = () => {
-  const [counters, setCounters] = useState<number[]>([]);
 
   // Closure example - each counter maintains its own scope
   const createCounter = () => {
