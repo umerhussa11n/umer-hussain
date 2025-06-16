@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import {
-  ChevronDown, ChevronRight, Code, Zap, Eye, Layers, Clock, Users, Lock, BookOpen
+  ChevronDown, ChevronRight, Code, Zap, Layers, Clock, Users, Lock, BookOpen
 } from 'lucide-react';
 
 // Demo components (replace with your own or remove if not available)
 const Placeholder = ({ title }: { title: string }) => (
-  <div className="text-gray-700 italic">Demo for "{title}" coming soon...</div>
+  <div className="text-gray-700 italic">Demo for {title} coming soon...</div>
 );
 
 const slugify = (str: string) =>
@@ -21,7 +21,7 @@ const slugify = (str: string) =>
 const beginnerTopics = [
   {
     name: 'Variables & Data Types',
-    notes: 'Learn about let, const, var, and JavaScript’s primitive types: string, number, boolean, null, undefined, symbol, and object.',
+    notes: 'Learn about let, const, var, and JavaScripts primitive types: string, number, boolean, null, undefined, symbol, and object.',
   },
   {
     name: 'Operators & Expressions',

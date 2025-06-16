@@ -1,11 +1,11 @@
 // All About Javascript Arrays.. 
 
 // this way of defining the array is not recomended as it can leave holes in array
-const myArray = new Array(3)
+const myArray = new ArrayList()
 console.log(myArray)
 
 // declare an array
-const numbersArray = new Array(1,2,3,4,5,6,7,8,9)
+const numbersArray = [1,2,3,4,5,6,7,8,9]
 console.log(numbersArray)
 
 // add an element to end of array...

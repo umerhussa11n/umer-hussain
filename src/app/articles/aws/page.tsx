@@ -30,7 +30,7 @@ const AWSPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen p-8">
       <h1 className="text-4xl font-bold mb-6 text-white">AWS Services Study Notes</h1>
       <p className="text-lg mb-8 text-white">
-        Here you'll find a list of AWS services I'm studying, with expandable notes for each.
+        Here you&aposll find a list of AWS services I&aposm studying, with expandable notes for each.
       </p>
       <ul className="w-full max-w-xl space-y-4">
         {awsServices.map((service, idx) => (

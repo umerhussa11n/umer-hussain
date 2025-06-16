@@ -81,7 +81,7 @@ const VariablesAndDataTypes = () => (
     <div className="max-w-2xl mx-auto p-6 border rounded-lg shadow-md p-4 m-8">
       <h2 className="text-xl font-semibold mb-2 text-center">Symbol Examples</h2>
     <p className="text-white">
-      Symbols are a unique data type introduced in ES6. They are often used to create unique property keys that won't conflict with other properties, even if they have the same name.
+      Symbols are a unique data type introduced in ES6. They are often used to create unique property keys that won&apost conflict with other properties, even if they have the same name.
     </p>
     <pre className="bg-white-900 text-white rounded p-4 overflow-x-auto mb-4">
       <code>{symbolExample}</code>
