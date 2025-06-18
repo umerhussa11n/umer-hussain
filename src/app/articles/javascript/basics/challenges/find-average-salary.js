@@ -73,11 +73,11 @@ const getAverageSalries = (employees) => {
     if (!Array.isArray(employees) || employees.length === 0){
         return averageSalary;
     } else {
-        for (let i=0; i< employees.length; i++) {
+        for (let i=0; i< employees.length; i++) { //O(n)
             salary.push(employees[i].salary)
         }
     }
-    const totalSalary = salary.reduce(sumReducer);
+    const totalSalary = salary.reduce(sumReducer); // //O(n)
     const totalEmployees = salary.length;
     averageSalary = totalSalary / totalEmployees
     
