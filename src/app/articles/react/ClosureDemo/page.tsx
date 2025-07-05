@@ -19,6 +19,23 @@ const ClosuresDemo: React.FC = () => {
   const [counter2] = useState(() => createCounter());
   const [values, setValues] = useState({ counter1: 0, counter2: 0 });
 
+  const incrementCounter = () => {
+    counter1.increment();
+    
+    setValues({
+      counter1: counter1.getValue(),
+      counter2: counter2.getValue()
+    });
+  }
+
+  const decrementCounter = () => {
+    counter1.decrement();
+
+    setValues({
+      counter1: counter1.getValue(),
+      counter2: counter2.getValue()
+    })
+  }
 
   useEffect(() => {
     setValues({
@@ -37,13 +54,13 @@ const ClosuresDemo: React.FC = () => {
           <h4 className="font-medium">Counter 1: {values.counter1}</h4>
           <div className="space-x-2 mt-2">
             <button
-              onClick={() => { counter1.increment(); updateCounters(); }}
+              onClick={() => { incrementCounter() }}
               className="px-2 py-1 bg-purple-500 text-white rounded text-sm"
             >
               +
             </button>
             <button
-              onClick={() => { counter1.decrement(); updateCounters(); }}
+              onClick={() => { decrementCounter() }}
               className="px-2 py-1 bg-purple-500 text-white rounded text-sm"
             >
               -
