@@ -58,13 +58,13 @@ const advancedTopics = [
 
 // Concept demos for advanced section
 const conceptDemos = [
-  {
-    id: 'basic-examples',
-    title: 'Basic Examples',
-    description: 'React basic concepts examples',
-    component: BasicExamples,
-    icon: Shield,
-  },
+  // {
+  //   id: 'basic-examples',
+  //   title: 'Basic Examples',
+  //   description: 'React basic concepts examples',
+  //   component: BasicExamples,
+  //   icon: Shield,
+  // },
   {
     id: 'class-component',
     title: 'Class Component',

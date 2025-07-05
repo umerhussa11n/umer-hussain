@@ -6,7 +6,7 @@ const DebounceThrottleDemo: React.FC = () => {
   const [normalCount, setNormalCount] = useState(0);
   const [debounceCount, setDebounceCount] = useState(0);
   const [throttleCount, setThrottleCount] = useState(0);
-  const debounceTimeoutRef = useRef<NodeJS.Timeout>();
+  const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const throttleLastRun = useRef<number>(0);
 
   const handleNormalClick = () => {
