@@ -72,13 +72,13 @@ const ClosuresDemo: React.FC = () => {
           <h4 className="font-medium">Counter 2: {values.counter2}</h4>
           <div className="space-x-2 mt-2">
             <button
-              onClick={() => { counter2.increment(); updateCounters(); }}
+              onClick={() => { incrementCounter() }}
               className="px-2 py-1 bg-purple-500 text-white rounded text-sm"
             >
               +
             </button>
             <button
-              onClick={() => { counter2.decrement(); updateCounters(); }}
+              onClick={() => { decrementCounter() }}
               className="px-2 py-1 bg-purple-500 text-white rounded text-sm"
             >
               -
