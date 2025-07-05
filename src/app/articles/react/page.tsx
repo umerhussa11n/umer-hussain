@@ -16,6 +16,7 @@ import BrowserCompatibilityDemo from './BrowserCompetibility/page';
 import PerformanceDemo from './PerformanceDemo/page';
 import AccessibilityDemo from './AccessibilityDemo/page';
 import SecurityDemo from './WebSecurityDemo/page';
+import User from './ClassComponent/page';
 
 const slugify = (str: string) =>
   str
@@ -57,6 +58,20 @@ const advancedTopics = [
 
 // Concept demos for advanced section
 const conceptDemos = [
+  {
+    id: 'basic-examples',
+    title: 'Basic Examples',
+    description: 'React basic concepts examples',
+    component: BasicExamples,
+    icon: Shield,
+  },
+  {
+    id: 'class-component',
+    title: 'Class Component',
+    description: 'React Class based component',
+    component: User,
+    icon: Shield,
+  },
   {
     id: 'event-delegation',
     title: 'Event Delegation',

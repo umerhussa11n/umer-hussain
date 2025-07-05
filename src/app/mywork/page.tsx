@@ -33,8 +33,7 @@ const MyWork = () => {
                 setError(result.message || "API has responded but there is an Error")
             }
         } catch (err) {
-            setError("API Failed so there is no response")
-            console.error('Error fetching portfolio:', err)
+            setError(`API Failed so there is no response, API Error: ${err}`)
         } finally {
             setLoading(false)
         }
