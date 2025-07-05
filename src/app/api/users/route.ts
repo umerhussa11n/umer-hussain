@@ -27,12 +27,11 @@ export async function GET() {
             message: 'success'
         });
     } catch (error) {
-        console.log(error)
         return NextResponse.json({
             success: false,
             data: [],
             status: 500,
-            message: 'API Error'
+            message: `API Error: ${error}`
         })
     }
 }

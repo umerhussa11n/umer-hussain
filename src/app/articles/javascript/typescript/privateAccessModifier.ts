@@ -17,8 +17,7 @@ class Service {
 const myService = new Service("James");
 
 // Example usage to avoid unused variable error
-console.log(myService.publicConfiguration);
-
+void myService.publicConfiguration
 //see below wont work and throw error: Property 'config' is private and only accessible within class 'Service'.ts(2341)
 // this is becasue we have a private 
 //let privateService = myService.config

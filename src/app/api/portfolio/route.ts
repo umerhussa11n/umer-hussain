@@ -15,14 +15,14 @@ export async function GET() {
       success: true,
       data: portfolio,
       message: "success",
-      status: 400
+      status: 200
     });
-  } catch (error) {    
+  } catch (error) {  
     return NextResponse.json<APIResponse>({
       success: false,
       data: [],
       status: 500,
-      message: "Error"
+      message: `API Error: ${error instanceof Error ? error.message : 'Unknown Error' }`
     });
   }
 }

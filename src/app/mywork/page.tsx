@@ -61,7 +61,7 @@ const MyWork = () => {
                     My Work Portfolio
                 </h1>
                 <p className="text-gray-600">
-                    Below is my work portfolio showcasing projects I've worked on
+                    Below is my work portfolio showcasing projects I have worked on
                 </p>
             </div>
 

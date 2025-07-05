@@ -19,16 +19,13 @@ const ClosuresDemo: React.FC = () => {
   const [counter2] = useState(() => createCounter());
   const [values, setValues] = useState({ counter1: 0, counter2: 0 });
 
-  const updateCounters = () => {
+
+  useEffect(() => {
     setValues({
       counter1: counter1.getValue(),
       counter2: counter2.getValue()
     });
-  };
-
-  useEffect(() => {
-    updateCounters();
-  }, []);
+  }, [counter1, counter2]);
 
   return (
     <div className="p-4 border rounded-lg">
