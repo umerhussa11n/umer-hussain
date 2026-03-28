@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "company": "Abbott Technologies International",
+    "role": "Founder",
+    "duration": "February 2026 - Present",
+    "details": [
+      {
+        "text": "Leading strategic product engineering and architectural consulting for startups and scale-ups, focusing on high-velocity code execution and scalable digital products.",
+        "skills": ["Technical Strategy", "Product Vision", "CTO-as-a-Service"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "company": "Lean Automation",
+    "role": "Technical Lead",
+    "duration": "December 2024 - January 2026",
+    "details": [
+      {
+        "text": "Provided engineering leadership for full-stack teams. Defined architectural strategy and roadmaps for industrial clients while establishing standards for API design, DevOps, and cloud infrastructure.",
+        "skills": [
+          "Engineering Leadership",
+          "Cloud Infrastructure",
+          "API Design"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "company": "Hurtigruten Group",
+    "role": "Developer / Architect",
+    "duration": "June 2024 - November 2024",
+    "details": [
+      {
+        "text": "Architected the HX Contentful CMS migration and optimized publishing workflows. Implemented high-performance destination pages using React and TypeScript for the TravelHX website.",
+        "skills": [
+          "Contentful CMS",
+          "React",
+          "TypeScript",
+          "Workflow Optimization"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "company": "Shell",
+    "role": "Technical Lead / Architect",
+    "duration": "March 2022 - May 2024",
+    "details": [
+      {
+        "text": "As Technical Lead, I drove an enterprise-scale digital transformation for Shell Energy Australia. I designed a micro-frontend architecture that enabled team autonomy and led the hands-on migration of mission-critical ERM portals to React.",
+        "skills": ["Micro-frontends", "React Architecture", "Leadership"]
+      },
+      {
+        "text": "Previously, as a Senior Engineer, I focused on high-performance frontend delivery, building core portfolio products for the RES B2B market segment and establishing modular patterns for future modernization.",
+        "skills": ["B2B Products", "Frontend Engineering", "React Architecture"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "company": "OxA Technologies",
+    "role": "Senior Frontend Developer",
+    "duration": "January 2022 - March 2022",
+    "details": [
+      {
+        "text": "Developed NFT marketplaces for the SWSX Festival and built specialized entertainment projects for FOX and the WWE using React.",
+        "skills": ["NFT Marketplace", "React", "Web3 Integration"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "company": "Cera",
+    "role": "Senior Frontend Developer",
+    "duration": "August 2021 - December 2021",
+    "details": [
+      {
+        "text": "Design and Implementation of text, audio and video chat between mobile app and web interface using library called PubNub.",
+        "skills": ["PubNub", "Real-time Communication", "WebRTC"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "company": "Foxtons",
+    "role": "Senior Frontend Developer (React SME)",
+    "duration": "August 2020 - August 2021",
+    "details": [
+      {
+        "text": "Acted as React Subject Matter Expert to lead the development of the company-wide Intranet and fixed critical financial tools like the Stamp Duty Calculator.",
+        "skills": ["React SME", "Internal Tools", "Feature Engineering"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "company": "Euroffice Ltd",
+    "role": "Senior Software Engineer",
+    "duration": "2018 - 2019",
+    "details": [
+      {
+        "text": "Led the Prospecting Team through mentoring and code reviews while managing full-stack development across React frontends and .NET/C# APIs.",
+        "skills": ["Team Leadership", "Full-Stack", ".NET", "C#"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "company": "First Sports International",
+    "role": "Software Engineer",
+    "duration": "April 2012 - February 2018",
+    "details": [
+      {
+        "text": "Engineered core modules for Education and Game Management Systems (GMS) serving the RFU and FA. Built automated build and deployment pipelines using TeamCity to improve engineering efficiency.",
+        "skills": ["CI/CD", ".NET", "Entity Framework", "TeamCity"]
+      },
+      {
+        "text": "Initially joining as a Junior Engineer, I focused on SQL Server database design and troubleshooting web applications while developing responsive features following the MVC design pattern.",
+        "skills": ["SQL Server", "MVC", "Responsive Design"]
+      }
+    ]
+  }
+]

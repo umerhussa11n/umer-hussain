@@ -1,0 +1,16 @@
+[
+  {
+    "id": "deployment",
+    "icon": "Zap",
+    "iconColor": "text-orange-500",
+    "title": "Fast Deployment",
+    "text": "Setting up CI/CD pipelines and cloud architecture for immediate scaling."
+  },
+  {
+    "id": "frontend",
+    "icon": "Code2",
+    "iconColor": "text-blue-500",
+    "title": "Slick Frontend",
+    "text": "Building interactive, motion-heavy interfaces with Next.js and React 19."
+  }
+]
