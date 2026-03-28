@@ -1,16 +1,44 @@
 [
   {
-    "id": "deployment",
-    "icon": "Zap",
+    "id": "software-architecture",
+    "icon": "Layers",
     "iconColor": "text-orange-500",
-    "title": "Fast Deployment",
-    "text": "Setting up CI/CD pipelines and cloud architecture for immediate scaling."
+    "title": "Software Architecture",
+    "text": "Designing scalable microfrontends (Module Federation) and high-performance CI/CD cloud pipelines."
   },
   {
-    "id": "frontend",
+    "id": "frontend-development",
     "icon": "Code2",
     "iconColor": "text-blue-500",
-    "title": "Slick Frontend",
-    "text": "Building interactive, motion-heavy interfaces with Next.js and React 19."
+    "title": "Frontend Engineering",
+    "text": "Crafting polished, motion-heavy interfaces using React 19, TypeScript, and Framer Motion."
+  },
+  {
+    "id": "technical-leadership",
+    "icon": "ShieldCheck",
+    "iconColor": "text-emerald-500",
+    "title": "Technical Leadership",
+    "text": "Full feature ownership from conception to deployment, emphasizing TDD with Vitest and performance profiling."
+  },
+  {
+    "id": "ai-driven-development",
+    "icon": "Sparkles",
+    "iconColor": "text-purple-500",
+    "title": "AI-Driven Development",
+    "text": "Leveraging LLMs and AI prototyping tools to accelerate development cycles and automate complex UI generation."
+  },
+  {
+    "id": "stakeholder-management",
+    "icon": "Users",
+    "iconColor": "text-amber-500",
+    "title": "Stakeholder Strategy",
+    "text": "Bridging the gap between engineering and business by articulating complex technical concepts to non-technical partners."
+  },
+  {
+    "id": "fullstack-data",
+    "icon": "Activity",
+    "iconColor": "text-rose-500",
+    "title": "Fullstack & Real-time Data",
+    "text": "Managing complex state and asynchronous data streams using React Query and Redpanda/Kafka."
   }
 ]

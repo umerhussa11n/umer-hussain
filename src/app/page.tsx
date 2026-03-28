@@ -1,6 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import { Briefcase, Code2, Zap } from "lucide-react";
+import {
+  Briefcase,
+  Code2,
+  Zap,
+  Sparkles,
+  ShieldCheck,
+  Layers,
+} from "lucide-react";
 
 // Components
 import SkillCard from "../components/SkillCard";
@@ -16,6 +23,9 @@ export default function Home() {
   const iconMap = {
     Zap: <Zap size={20} className="text-orange-500" />,
     Code2: <Code2 size={20} className="text-blue-500" />,
+    Sparkles: <Sparkles size={20} className="text-blue-500" />,
+    ShieldCheck: <ShieldCheck size={20} className="text-blue-500" />,
+    Layers: <Layers size={20} className="text-blue-500" />,
   };
 
   return (
@@ -28,15 +38,32 @@ export default function Home() {
         </section>
 
         {/* BENTO GRID - Skills Loop */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-24 max-w-4xl mx-auto">
-          {skillsData.map((skill) => (
-            <SkillCard
-              key={skill.id}
-              icon={iconMap[skill.icon as keyof typeof iconMap]}
-              title={skill.title}
-              text={skill.text}
-            />
-          ))}
+        <section className="overflow-hidden mb-24 max-w-4xl mx-auto py-10">
+          <motion.div
+            className="flex gap-4"
+            initial={{ x: 0 }}
+            animate={{ x: "-50%" }} // Moves halfway (since we duplicate the list for a seamless loop)
+            transition={{
+              duration: 20,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            whileHover={{ transition: { duration: 100 } }} // Slows down significantly on hover
+          >
+            {/* First set of cards */}
+            {[...skillsData, ...skillsData].map((skill, index) => (
+              <div
+                key={`${skill.id}-${index}`}
+                className="min-w-[300px] md:min-w-[400px]"
+              >
+                <SkillCard
+                  icon={iconMap[skill.icon as keyof typeof iconMap]}
+                  title={skill.title}
+                  text={skill.text}
+                />
+              </div>
+            ))}
+          </motion.div>
         </section>
 
         {/* ENGAGEMENTS SECTION - Projects Loop */}
