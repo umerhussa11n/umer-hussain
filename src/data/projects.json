@@ -3,7 +3,7 @@
     "id": 1,
     "company": "Abbott Technologies International",
     "role": "Founder",
-    "duration": "February 2026 - Present",
+    "duration": "August 2026 - Present",
     "details": [
       {
         "text": "Leading strategic product engineering and architectural consulting for startups and scale-ups, focusing on high-velocity code execution and scalable digital products.",
@@ -15,10 +15,10 @@
     "id": 2,
     "company": "Lean Automation",
     "role": "Technical Lead",
-    "duration": "December 2024 - January 2026",
+    "duration": "December 2024 - August 2026",
     "details": [
       {
-        "text": "Provided engineering leadership for full-stack teams. Defined architectural strategy and roadmaps for industrial clients while establishing standards for API design, DevOps, and cloud infrastructure.",
+        "text": "Fullstack Engineering & engineering leadership with architectural strategy and roadmaps for industrial clients. Established standards for API design, DevOps, and cloud infrastructure.",
         "skills": [
           "Engineering Leadership",
           "Cloud Infrastructure",
